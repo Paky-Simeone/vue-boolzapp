@@ -1,4 +1,40 @@
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(101,199,110,1) 0%);
+    background-color: darkcyan;
+}
+
+.container{
+    height: 80vh;
+    width: 1200px;
+    border: 1px dashed white;
+    margin-top: 50px;
+}
+
+#f-col{
+    height: 3rem;
+    border: 1px dashed white;
+}
+
+#s-col{
+    height: 3rem;
+    border: 1px dashed white;
+}
+
+#t-col{
+    height: 2rem;
+    border: 1px dashed white;
+}
+
+#contact-col{
+    height: 34.5rem;
+    border: 1px dashed white;
+}
+
+#user-text{
+    height: 3rem;
+    border: 1px dashed white;
+    margin: auto;
+}
+
+.container-chat{
+    height: calc(100% / 100px);
 }
