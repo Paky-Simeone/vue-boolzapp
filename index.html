@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzapp</title>
     
+    <!-- Link FontFamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -23,9 +28,9 @@
 <body>
     <div id="app">
         <!-- CONTAINER TOTALE -->
-        <div class="row" id="container">
+        <div id="container">
                 <!-- COLONNA SINISTRA -->
-                <div class="col-4 chat">
+                <div class="leftbar">
                     <!-- PROFILO UTENTE -->
                     <div class="profilomio">
                         <div>
@@ -39,18 +44,23 @@
                         </div>
                     </div>
                     <!-- ATTIVA NOTIFICHE -->
-                    <div class="row chat notifiche">
-                        <div></div>
-                        <div></div>
+                    <div class="notifiche p-0">
+                        <div class="campana mt-2 ms-3">
+                            <i class="fa-solid fa-bell-slash" style="color: #74C0FC;"></i>
+                        </div>
+                        <div>
+                            <p id="ricevinotifiche" class="m-0 ms-2">Ricevi nuovi messaggi</p>
+                            <a id="attivanotifiche" href="#" class="ms-2">Attiva notifiche desktop</a>
+                        </div>
                     </div>
                     <div class="chat cerca"></div>
                     <div class="chat chatprofile"></div>
                 </div>
                 <!-- COLONNA DESTRA -->
-                <div class="col-8 gigi">
-                    <div class="row chat"></div>
+                <div class="rightbar">
+                    <div class="chat current"></div>
                     <div class="chatcontainer"></div>
-                    <div class="row chat"></div>
+                    <div class="footer"></div>
                 </div>
         </div>
     </div>
